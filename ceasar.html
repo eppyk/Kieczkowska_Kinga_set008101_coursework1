@@ -1,0 +1,57 @@
+<html>
+	<head>
+	<title>SET08101 - Ceasar cipher </title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	</head>
+	<body>
+	<h1> Ceasar Cipher </h1>
+	<p> What is a Ceasar cipher? </p>
+	<p> In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence. </p>
+	<p> source: <a href="https://en.wikipedia.org/wiki/Caesar_cipher"> Wikipedia </a></p>
+
+	<table class="structure" align="center">
+	<tr>
+	<th>
+		<div id="input_area">
+			<p> Type the text to be encoded here: </p>
+			<textarea rows="1" cols="50" autofocus id="encode_message"> </textarea>
+			<p>Key:
+			<textarea rows="1" cols="5" autofocus id="key"> </textarea> </p>
+			<button type="button" onclick="ceasar_encode()" id="encode_button">Encode</button>
+		</div>
+
+		<div id="output area">
+			<p>
+				This is your encoded message: <br />
+				<div id="encode_output"> </div>
+			</p>
+		</div>
+
+		<script type="text/javascript" src="ceasar.js"></script>
+	</th>
+
+
+	<th>
+		<div id="input_area">
+			<p> Type the text to be decoded here: </p>
+			<textarea rows="1" cols="50" autofocus id="decode_message"> </textarea>
+			<br />
+			<button type="button" onclick="ceasar_decode()" id="decode_button">Decode</button>
+		</div>
+
+		<div id="output area">
+			<p>
+				This is your text decoded using every possible key. One of the outputs will be right! <br />
+				<div id="decode_output"> </div>
+			</p>
+		</div>
+
+		<script type="text/javascript" src="ceasar.js"></script>
+	</th>
+	</tr>
+	</table>
+	<div id="back_button">
+		<button type="button" id="back"><a href="index.html">Back to homepage</a></button>
+	</div>
+	</body>
+</html>

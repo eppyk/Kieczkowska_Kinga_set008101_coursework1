@@ -1,0 +1,55 @@
+<html>
+	<head>
+	<title>SET08101 - Morse code </title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	</head>
+	<body>
+	<h1> Morse Code </h1>
+	<p> What is Morse code? </p>
+	<p>Morse code is a method of transmitting text information as a series of on-off tones, lights, or clicks that can be directly understood by a skilled listener or observer without special equipment. It is named for Samuel F. B. Morse, an inventor of the telegraph.</p>
+	<p>Source: <a href="https://en.wikipedia.org/wiki/Morse_code">Wikipedia</a></p>
+
+	<table class="structure" align="center">
+	<tr>
+	<th>
+		<div id="input_area">
+			<p> Type the text to be encoded here: </p>
+			<textarea rows="1" cols="50" autofocus id="encode_message"> </textarea>
+			<br />
+			<button type="button" onclick="morse_encode()" id="encode_button">Encode</button>
+		</div>
+
+		<div id="output area">
+			<p>
+				This is your encoded message: <br />
+				<div id="encode_output"> </div>
+			</p>
+		</div>
+
+		<script type="text/javascript" src="morse.js"></script>
+	</th>
+
+
+	<th>
+		<div id="input_area">
+			<p> Type the text to be decoded here: </p>
+			<textarea rows="1" cols="50" autofocus id="decode_message"> </textarea>
+			<br />
+			<button type="button" onclick="morse_decode()" id="decode_button">Decode</button>
+		</div>
+
+		<div id="output area">
+			<p>
+				This is your decoded message: <br />
+				<div id="decode_output"> </div>
+			</p>
+		</div>
+
+		<script type="text/javascript" src="morse.js"></script>
+	</th>
+	</tr>
+	</table>
+	<div id="back_button">
+<button type="button" id="back"><a href="index.html">Back to homepage</a></button>	</div>
+	</body>
+</html>

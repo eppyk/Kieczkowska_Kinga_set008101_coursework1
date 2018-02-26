@@ -1,0 +1,54 @@
+<html>
+	<head>
+	<title>SET08101 - Polybius cipher </title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	</head>
+	<body>
+	<h1> Polybius Cipher </h1>
+	<p> What is a Polybius cipher? </p>
+	<p>In cryptography, the Polybius square, also known as the Polybius checkerboard, is a device invented by the Ancient Greek historian and scholar Polybius, for fractionating plaintext characters so that they can be represented by a smaller set of symbols.</p>
+	<p> Source: <a href="https://en.wikipedia.org/wiki/Polybius_square"> Wikipedia </a></p>
+	<p>The square used on this website is a 6 by 6 one, including the digits 0 - 9:</p>
+	<div id="picture">
+		<img src="polybius_square.png">
+	</div>
+	<br />
+
+	<table class="structure "align="center">
+	<tr>
+	<th>
+	<div id="input_area">
+	<p> Type the text to be encoded here: </p>
+	<textarea rows="1" cols="50" autofocus id="encode_message"> </textarea>
+	<br />
+	<button type="button" onclick="polybius_encode()" id="encode_button">Encode</button>
+	</div>
+
+	<div id="output area">
+	<p>
+	This is your encoded message: <br />
+	<div id="encode_output"> </div>
+	</p>
+	</div>
+	</th>
+	<th>
+	<div id="input_area">
+	<p> Type the text to be decoded here: </p>
+	<textarea rows="1" cols="50" autofocus id="decode_message"> </textarea>
+	<br />
+	<button type="button" onclick="polybius_decode()" id="decode_button">Decode</button>
+	</div>
+	<div id="output area">
+		<p>
+			This is your decoded message: <br />
+			<div id="decode_output"> </div>
+		</p>
+	</div>
+	</th>
+	</tr>
+	</table>
+	<script type="text/javascript" src="polybius.js"></script>
+	<div id="back_button">
+<button type="button" id="back"><a href="index.html">Back to homepage</a></button>	</div>
+	</body>
+</html>

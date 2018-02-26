@@ -1,0 +1,54 @@
+<html>
+	<head>
+	<title> SET08101 - Base64 </title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	</head>
+	<body>
+	<h1> Base64 Encoding </h1>
+	<p> What is Base64? </p>
+	<p>Base64 is a group of similar binary-to-text encoding schemes that represent binary data in an ASCII string format by translating it into a radix-64 representation. The term Base64 originates from a specific MIME content transfer encoding.</p>
+	<p>Source: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowBase64/Base64_encoding_and_decoding">MDN Web Docs</a></p>
+
+	<table class="structure" align="center">
+	<tr>
+	<th>
+		<div id="input_area">
+			<p>Type the text to be encoded here: </p>
+			<textarea rows="1" cols="50" autofocus id="encode_message"> </textarea>
+			<br />
+			<button type="button" onclick="base64_encode()" id="encode_button">Encode</button>
+		</div>
+
+		<div id="output area">
+			<p>This is your encoded message: <br />
+				<div id="encode_output"> </div>
+			</p>
+		</div>
+
+		<script type="text/javascript" src="base64.js"></script>
+	</th>
+
+
+	<th>
+		<div id="input_area">
+			<p>Type the text to be decoded here:</p>
+			<textarea rows="1" cols="50" autofocus id="decode_message"> </textarea>
+			<br />
+			<button type="button" onclick="base64_decode()" id="decode_button">Decode</button>
+		</div>
+
+		<div id="output area">
+			<p>
+				This is your decoded message: <br />
+				<div id="decode_output"> </div>
+			</p>
+		</div>
+
+		<script type="text/javascript" src="base64.js"></script>
+	</th>
+	</tr>
+	</table>
+	<div id="back_button">
+<button type="button" id="back"><a href="index.html">Back to homepage</a></button>	</div>
+	</body>
+</html>

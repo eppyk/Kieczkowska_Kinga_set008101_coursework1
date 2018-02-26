@@ -1,0 +1,127 @@
+body {
+  font-family: Georgia;
+  background-color: #B0C4DE;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 50px;
+	margin-bottom: 200px;
+}
+
+h1 {
+  font-variant: small-caps;
+	color: navy;
+  font-weight: normal;
+	text-shadow: 3px 2px lightgrey;
+	background-color: #E6E6FA;
+	text-align: center;
+	letter-spacing: 4px;
+}
+
+h2 {
+  color: navy;
+  font-size: 20px;
+  font-weight: normal;
+  text-shadow: 1px 1px lightgrey;
+  text-align: center;
+  letter-spacing: 2px;
+
+}
+
+p {
+	color: navy;
+  font-weight: normal;
+	font-family: Georgia;
+}
+
+a:link {
+	color: white;
+  font-weight: normal;
+}
+
+a:visited {
+	color:navy;
+  font-weight: normal;
+
+}
+
+a:hover {
+	color:blue;
+  font-weight: normal;
+
+}
+
+#menu {
+	letter-spacing: 2px;
+
+
+}
+th:hover {
+  background-color: #E6E6FA;
+
+}
+
+table, th {
+  border: 1px solid black;
+	padding: 15px;
+}
+
+#back_button {
+	letter-spacing: 2px;
+	text-align: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+
+}
+
+#picture {
+  text-align: center;
+
+}
+
+#structure {
+  text-align: center;
+  width: 300px;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 20px;
+  font-color: black;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 14px;
+}
+
+#framed {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: 0.5px black solid;
+}
+
+#back {
+  margin-top: 25px;
+}
+
+#encode_button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#decode_button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#encode_output{
+  font-weight: normal;
+
+
+}
+#decode_output {
+  font-weight: normal;
+
+}

@@ -1,0 +1,57 @@
+<html>
+	<head>
+	<title>SET08101 - ROT13 cipher </title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	</head>
+	<body>
+	<h1> ROT13 Cipher </h1>
+	<p> What is the ROT13 cipher? </p>
+	<p>ROT13 ("rotate by 13 places", sometimes hyphenated ROT-13) is a simple letter substitution cipher that replaces a letter with the 13th letter after it, in the alphabet. ROT13 is a special case of the Caesar cipher, developed in ancient Rome.
+
+Because there are 26 letters (2×13) in the basic Latin alphabet, ROT13 is its own inverse; that is, to undo ROT13, the same algorithm is applied, so the same action can be used for encoding and decoding.</p>
+	<p>Source: <a href="https://en.wikipedia.org/wiki/ROT13">Wikipedia</a></p>
+
+	<table class="structure" align="center">
+	<tr>
+	<th>
+		<div id="input_area">
+			<p> Type the text to be encoded here: </p>
+			<textarea rows="1" cols="50" autofocus id="encode_message"> </textarea>
+			<br />
+			<button type="button" onclick="rot13_encode()" id="encode_button">Encode</button>
+		</div>
+
+		<div id="output area">
+			<p>
+				This is your encoded message: <br />
+				<div id="encode_output"> </div>
+			</p>
+		</div>
+
+		<script type="text/javascript" src="rot13.js"></script>
+	</th>
+
+
+	<th>
+		<div id="input_area">
+			<p> Type the text to be decoded here: </p>
+			<textarea rows="1" cols="50" autofocus id="decode_message"> </textarea>
+			<br />
+			<button type="button" onclick="rot13_decode()" id="decode_button">Decode</button>
+		</div>
+
+		<div id="output area">
+			<p>
+				This is your decoded message: <br />
+				<div id="decode_output"> </div>
+			</p>
+		</div>
+
+		<script type="text/javascript" src="rot13.js"></script>
+	</th>
+	</tr>
+	</table>
+	<div id="back_button">
+<button type="button" id="back"><a href="index.html">Back to homepage</a></button>	</div>
+	</body>
+</html>
